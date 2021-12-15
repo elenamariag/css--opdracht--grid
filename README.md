@@ -36,3 +36,4 @@ Oké, je mag weer aan je laptop komen!
 14. Resize jouw scherm en bekijk jouw CSS Grid in actie!
 # opdracht-3
 # final-opdracht-3
+# final-opdracht-3
