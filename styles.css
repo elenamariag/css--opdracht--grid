@@ -5,13 +5,15 @@
         display: grid;
         row-gap: 16px;
         column-gap: 16px;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows-rows: 240px auto 100px 50px 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:50px 240px auto 100px 50px;
         grid-template-areas:
-            "header aside"
-            "main aside"
-            "main aside-1"
-            "footer";
+        "item-A item-C item-C"
+        "item-B item-C item-C"
+        "item-B none item-D"
+        "item-B none none"
+        "item-F item-F item-F";
+
     }
 
     .grid-item {
@@ -19,31 +21,32 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
     }
 
     #item-A {
         background-color: darkred;
-        grid-area: header;
+        grid-area: item-A;
     }
 
     #item-B {
         background-color: darkred;
-        grid-area: main;
+        grid-area: item-B;
     }
 
     #item-C {
         background-color: darkred;
-        grid-area: aside;
+        grid-area: item-C;
     }
 
     #item-D {
         background-color: darkred;
-        grid-area: aside-1;
+        grid-area: item-D;
     }
 
     #item-F {
         background-color: darkred;
-        grid-area: footer;
+        grid-area: item-F;
     }
 }
 /* mobile desktop */
@@ -55,9 +58,9 @@
     grid-template-columns: 1fr;
     grid-template-rows-rows: 50px auto 80%;
     grid-template-areas:
-            "header"
-            "main"
-            "aside"
-            "aside-1"
-            "footer";
+            "item-A"
+            "item-B"
+            "item-C"
+            "item-D"
+            "item-F";
 }
