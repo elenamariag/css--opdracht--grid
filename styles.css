@@ -1,7 +1,7 @@
 /* desktop grid */
 @media screen and (min-width: 576px) {
     .container {
-        background-color: #eded;
+        background-color: pink;
         display: grid;
         row-gap: 16px;
         column-gap: 16px;
@@ -22,7 +22,7 @@
     }
 
     #item-A {
-        background-color: grey;
+        background-color: darkred;
         grid-area: header;
     }
 
@@ -32,23 +32,23 @@
     }
 
     #item-C {
-        background-color: darkblue;
+        background-color: darkred;
         grid-area: aside;
     }
 
     #item-D {
-        background-color: pink;
+        background-color: darkred;
         grid-area: aside-1;
     }
 
     #item-F {
-        background-color: green;
+        background-color: darkred;
         grid-area: footer;
     }
 }
 /* mobile desktop */
 .container {
-    background-color: #eded;
+    background-color: pink;
     display: grid;
     row-gap: 4px;
     column-gap: 4px;
